@@ -8,7 +8,7 @@ def hello_world():
 
 @app.get("/todo")
 def todo():
-    return {"message": "Todo app Successfully running!!"}, 200
+    return {"message": "Todo app Successfully running!!", "data": [1,2]}, 200
 
 
 if __name__ == "__main__":
