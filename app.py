@@ -10,6 +10,8 @@ def hello_world():
 def todo():
     return {"message": "Todo app Successfully running!!", "data": [1,2]}, 200
 
-
+@app.get("/index")
+def index():
+    return """<h1>Hello Jenkins</h1>"""
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
